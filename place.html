@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - Marivi Castro</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals.">
+    <meta name="author" content="Marivi Castro">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <header class="header">
+        <h1>Venezuela</h1>
+    </header>
+    <main>
+    <section class="image">
+        <picture>
+             <!-- WebP image for desktop -->
+             <source srcset="images/Venezuela.webp" media="(min-width: 1000px)">
+             <!-- WebP image for mobile -->
+             <source srcset="images/Venezuela.webp" media="(min-width: 500px)">
+        <img src="images/Venezuela.webp" alt="Venezuela">
+        </picture>
+    </section>
+    <section class="data">
+        <h2>Data</h2>
+        <ul>
+            <li><b>Area:</b> 916.445 Km²</li>
+            <li><b>Population:</b> 28,84 millions </li>
+            <li><b>Capital:</b> Caracas</li>
+            <li><b>Languages:</b> Spanish</li>
+            <li><b>Currency:</b> Bolivares (Bs F)</li>
+            <li><b>Time Zone:</b> GMT-4</li>
+            <li><b>Calling Code:</b> +58</li>
+        </ul>
+    </section>
+    <section class="weather">
+        <h2>Weather</h2>
+        <span><img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon"></span>
+        <ul>
+            <li><strong>Temperature:</strong> <span id="temperature">28°C</span></li>
+            <li><strong>Conditions:</strong> Sunny</li>
+            <li><strong>Wind:</strong> <span id="windSpeed">10 km/h</span></li>
+            <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+          </ul>
+    </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Marivi Castro, Venezuela
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</div>
+</body>
+</html>
