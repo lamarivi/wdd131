@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #454C29; 
+    --secondary-color:  #fcf0e0; 
+    --accent1-color: #C4B1AE; 
+    --accent2-color: #7D4F50; 
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    margin: 1em auto 1em;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+p {
+    margin: 1em 1em 1em;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color)
+}
+
+
+header{
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo{
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: aliceblue;
+}
+
+
+.trip-descriptions {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 600px;
+    width: auto;
+    margin: 3em 3em 3em;;
+}
+
+.trip {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.trip img {
+    width: 90%; 
+    height: 400px; 
+    object-fit: cover;
+    margin: 1em;
+}
+
+.trip-table {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.trip-table th,
+.trip-table td {
+    padding: 15px;
+    border: 1px solid var(--accent1-color);
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer {
+	text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 10px;
+  }
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px; 
+  }
+  
+.sociallinks a {
+    display: inline-block;
+  }
+  
+.sociallinks img {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease, opacity 0.3s ease 
+  }
+
+@media (max-width: 700px) {
+    .hamburguer{
+    display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+    opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+    transform: translateY(8px) rotate(45deg);
+    }
+    
+    .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #606c38;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .nav-item{
+    margin: 16px 0;
+    }
+    
+    .nav-menu.active {
+    left: 0;
+    }}
+
+    .trip-descriptions {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .trip-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        height: auto; 
+        margin: 1em; 
+    }
+
+    .trip {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .trip img {
+        width: 100%; /* Makes image take full width */
+        height: 400px; /* Increases image height */
+        object-fit: cover;
+    }
+
+    .trip-table {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .trip-table th, .trip-table td {
+        padding: 8px;
+    }
+
+    footer .sociallinks {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .sociallinks img {
+        width: 25px;
+        height: 25px;
+    }

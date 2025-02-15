@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project | WDD131">
+    <meta name="author" content="Marivi">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title> Contact Us | White Water Rafting</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li class="nav-item">
+            <a><img src="images/project/Logo.png" alt="logo" class="logo"></a>
+                </li>
+                <li class="nav-item">
+            <a href="Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+            <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+            <a href="trips.html">Trips</a>
+                 </li>
+                 <li class="nav-item">
+            <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h1>Contact Information</h1>
+                <p><strong>Address:</strong> Calle 24 entre AV. 8 y plaza Las Heroinas</p>
+                <p><strong>Phone:</strong> +58 414 285.85.41</p>
+                <p><strong>Email:</strong> clubaventurismo@gmail.com</p>
+            </section>
+
+            <section class="section">
+                <h2>Our Team</h2>
+                <div class="employees">
+                    <div class="employee">
+                        <img loading="lazy" src="images/project/employee2.webp" width="600" height="400" alt="Marivi Castro">
+                        <p>Marivi Castro - Tour Guide</p>
+                    </div>
+                    <div class="employee">
+                        <img loading="lazy" src="images/project/employee3.jpg" width="2048" height="1366" alt="Jesús Villaroel">
+                        <p>Jesús Villaroel - Staff Management</p>
+                    </div>
+                    <div class="employee">
+                        <img loading="lazy" src="images/project/employee1.webp" width="600" height="706" alt="Francisco Moure">
+                        <p>Francisco Moure - Customer Support</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form">
+                <h2>Contact Form</h2>
+                <form action="submit_contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label>Purpose of Message:</label>
+                    <div>
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+    
+                    <label>
+                        <input type="checkbox" name="subscribe" value="yes">
+                        Subscribe me to the monthly newsletter
+                    </label>
+    
+                    <input type="submit" value="submit">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img loading="lazy" src="images/project/Facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img loading="lazy" src="images/project/Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img loading="lazy" src="images/project/instagram.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
